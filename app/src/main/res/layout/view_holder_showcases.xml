@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_showcases"
+    android:layout_height="@dimen/height_showcases"
+    android:layout_marginStart="@dimen/margin_card_medium_2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivShowcase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/placeholder_wolverine_image"
+        android:scaleType="centerCrop" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnPlay"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/margin_xxlarge"
+        android:layout_height="@dimen/margin_xxlarge"
+        android:layout_marginBottom="@dimen/margin_xxlarge"
+        app:cornerRadius="@dimen/margin_large"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        app:icon="@drawable/ic_baseline_play_arrow_black_24dp"
+        app:iconPadding="0dp"
+        android:insetBottom="0dp"
+        android:insetTop="0dp"
+        android:insetLeft="0dp"
+        android:insetRight="0dp"
+        android:elevation="@dimen/margin_large"
+        android:backgroundTint="@color/colorAccent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvShowcasesMovieDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:elevation="@dimen/margin_medium"
+        android:textColor="@color/colorSecondaryText"
+        android:text="@string/lbl_showcase_movie_date" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvshowcasesMovieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvShowcasesMovieDate"
+        android:layout_alignStart="@id/tvShowcasesMovieDate"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold"
+        android:elevation="@dimen/margin_medium"
+        android:text="@string/lbl_showcases" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparentOverlay"
+        android:elevation="@dimen/margin_small" />
+
+</RelativeLayout>
